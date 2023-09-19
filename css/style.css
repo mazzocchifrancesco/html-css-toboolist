@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     background-color:#F6F8F9;
+    font-family:"Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 /* banner + logo */
@@ -31,10 +32,11 @@ main {
     height: 100%;
     display: flex;
 	align-items: center;
+    color: #515050;
 }
 .container {
     background-color: #F6F8F9;
-    height: 80%;
+    height: 90%;
     width: 70%;
     margin: auto;
     position: relative;
@@ -82,4 +84,74 @@ main {
     border-radius:0 0 15px 15px;
     position: absolute;
     bottom: 0;
+}
+#lista-main {
+    list-style-position: inside;
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 40px;
+    font-weight: 800;
+}
+#lista-main>li {
+    margin-bottom: 20px;
+}
+#lista-main>li:before {
+    content: "▼";
+    padding-left: 10px;
+}
+#lista-inside {
+    list-style-position: inside;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#lista-inside>li {
+    margin-bottom: 20px;
+}
+.check {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius:50% ;
+    border: 2px solid;
+    margin-right: 10px;
+}
+.check.on {
+    color: green;
+}
+.check.off {
+    color: red;
+}
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    font-size: 500;
+}
+.editorial {
+    background-color:#47A9E8 ;
+}
+.q1-goals {
+    background-color:#9C72E3 ;
+}
+.recruiting {
+    background-color:#63BEA9;
+}
+.mobile {
+    background-color:#F39C34;
+}
+.website {
+    background-color:#D563A0;
+}
+.sales {
+    background-color: #B1C729;
 }
