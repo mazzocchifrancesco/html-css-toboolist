@@ -24,7 +24,7 @@ html, body {
     left: 30px;
 }
 #titolo {
-    font-size: 50px;
+    font-size: 60px;
     color: #061B36;
     font-weight: 800;
 }
@@ -77,7 +77,7 @@ main {
 
 /* lista */
 
-#lista {
+#list-container {
     height: 89%;
     width: 100%;
     background-color: white;
@@ -85,52 +85,58 @@ main {
     position: absolute;
     bottom: 0;
 }
-#lista-main {
-    list-style-position: inside;
-    list-style: none;
-    margin-top: 40px;
-    margin-left: 40px;
-    font-size: 40px;
+.lista.main {
+    margin: 60px;
+    font-size: 30px;
     font-weight: 800;
 }
-#lista-main>li {
-    margin-bottom: 20px;
+.lista.main>li {
+    margin-bottom: 40px;
 }
-#lista-main>li:before {
-    content: "▼";
+.lista.main>li:before {
+    content: '\23F7';
     padding-left: 10px;
 }
-#lista-inside {
+.lista.inside {
+
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight:600;
+}
+.lista {
     list-style-position: inside;
     list-style: none;
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: 20px;
-    font-weight: 200;
 }
-
-#lista-inside>li {
+.lista.inside>li {
     margin-bottom: 20px;
 }
+
+/* checkmark */
+
 .check {
     display: inline-flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     width: 25px;
     height: 25px;
     border-radius:50% ;
     border: 2px solid;
     margin-right: 10px;
+    font-size: 12px;
 }
 .check.on {
-    color: green;
+    color: #63BEA9;
 }
 .check.off {
     color: red;
 }
+
+/* tag */
+
 .tag {
     display: inline-block;
-    padding: 4px 8px;
+    padding: 6px 10px;
     margin-left: 10px;
     border-radius: 10px;
     font-size: 15px;
