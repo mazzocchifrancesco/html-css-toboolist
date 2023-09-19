@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color:#F6F8F9;
+}
+
+/* banner + logo */
+#banner {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+	align-items: center;
+    padding-left: 30px;
+}
+#logo {
+    height: 70%;
+    left: 30px;
+}
+#titolo {
+    font-size: 50px;
+    color: #061B36;
+    font-weight: 800;
+}
+main {
+    height: 100%;
+    display: flex;
+	align-items: center;
+}
+.container {
+    background-color: #F6F8F9;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+#pulsanti {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+}
+#lista {
+    height: 89%;
+    width: 100%;
+    background-color: white;
+    border-radius:0 0 15px 15px;
+    position: absolute;
+    bottom: 0;
+}
